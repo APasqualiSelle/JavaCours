@@ -1,6 +1,10 @@
 package com.sdz.classesabstraitesetlesinterfaces;
 
-public class Canin extends Animal {
+public abstract class Canin extends Animal {
 
-    
+    void deplacement(){
+        System.out.println("Je  me déplace en meute!");
+    }
+
+
 }
