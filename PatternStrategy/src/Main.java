@@ -1,4 +1,4 @@
-
+import com.sdz.comportement.*;
 
 public class Main {
 
@@ -30,7 +30,7 @@ public class Main {
 
 
         }*/
-        Personnage[] tPers = {new Guerrier(), new Civil(), new Medecin(), new Chirurgien(), new Sniper()};
+       /* Personnage[] tPers = {new Guerrier(), new Civil(), new Medecin(), new Chirurgien(), new Sniper()};
 
         for (int i = 0; i < tPers.length; i++) {
 
@@ -39,7 +39,25 @@ public class Main {
             tPers[i].soigner();
             tPers[i].seDeplacer();
             tPers[i].combattre();
-        }
+        }*/
+
+        Personnage pers = new Guerrier();
+        pers.soigner();
+        pers.setSoin(new Operation());
+        pers.soigner();
+
+        //nous pouvons changer les comportements de base
+
+        Personnage chir = new Chirurgien();
+        chir.combattre();
+        chir.setEspritCombatif(new CombatCouteau());
+        chir.combattre();
+
+        Personnage snip = new Sniper();
+        snip.setEspritCombatif(new Pacifiste());
+        snip.combattre();
+
+
 
     }
 }
