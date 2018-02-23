@@ -1,3 +1,4 @@
+import com.sdz.comportement.*;
 public class Chirurgien extends Personnage {
 
   /*  public void combattre(){
@@ -6,7 +7,7 @@ public class Chirurgien extends Personnage {
 
     public void seDeplacer(){
         System.out.println("Je me déplace à pied.");
-    }*/
+    }*//*
 
     public void soigner(){
         //System.out.println("Je fais des opérations.");
@@ -14,7 +15,12 @@ public class Chirurgien extends Personnage {
             System.out.println("Je fais de merveilles.");
         else
             System.out.println("Je fais des opérations.");
-    }
+    }*/
+public Chirurgien(){
+
+    this.soin = new Operation();
+}
+
 
 
 }

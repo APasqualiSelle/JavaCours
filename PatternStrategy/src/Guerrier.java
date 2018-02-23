@@ -15,15 +15,15 @@ public class Guerrier extends Personnage {
 //        System.out.println("Je me déplace à pied.");
 //    }//PLUS besoin de cette méthode car nous avons maintenant le comportement par défaut dans Personnage
 
-   public Guerrier(){
+   public Guerrier(){// cela cest un constructeur
 
        this.espritCombatif = new CombatPistolet();
    }
 
-   public Guerrier(EspritCombatif esprit, Soin soin, Deplacement dep){
+   /*public Guerrier(EspritCombatif esprit, Soin soin, Deplacement dep){
 
-       super(esprit, soin, dep);d
-   }
+       super(esprit, soin, dep);
+   }*/
 
 
 }
