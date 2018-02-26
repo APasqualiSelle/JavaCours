@@ -1,12 +1,21 @@
 package com.sdz;
 
 public class Ville {
- private String nomVille;
-    private String nomPays;
-  private  int nbreHabitants;
-  private char categorie;
+
+    //variables d'instance
+   protected String nomVille;
+    protected String nomPays;
+  protected int nbreHabitants;
+  protected char categorie;
+
+  //variables de classe public qui comptent les instances: variables de classes
+    public static int nbreInstances = 0;
+
+    //variable de classe privée  qui comptera aussi les instances
+    private static int nbreInstancesBis = 0;
 
     //Constructor par défaut sans paramètres
+
 
     public Ville() {
 
@@ -14,6 +23,10 @@ public class Ville {
         this.nomVille = "Inconnu";
         this.nomPays = "Inconnu";
         this.nbreHabitants = 0;
+        this.setCategorie();
+        //On incrémente nos variables de classe à chaque appel aux constructeurs
+        nbreInstances++;
+        nbreInstancesBis++;
     }
 
     //Constructor avec paramètres
@@ -26,11 +39,26 @@ public class Ville {
         nomVille = pNom;
         nomPays=pPays;
         nbreHabitants=pNbre;
+        this.setCategorie();
+        //On incrémente nos variables de classe à chaque appel aux constructeurs
+        nbreInstances++;
+        nbreInstancesBis++;
     }
+
+
 
     //Les variables et les constructeurs n'ont pas changé...
 
     //************************** ACCESSEURS ****************
+
+
+    public static int getNbreInstancesBis() {//l'accesseur est aussi déclarée static
+        return nbreInstancesBis;
+    }
+
+    public char getCategorie() {
+        return categorie;
+    }
 
     //Retourne le nom de la Ville
     public String getNom(){
@@ -77,10 +105,30 @@ public class Ville {
             i++;
 
 
-        this.categorie = categories[i];//it does NOT belong to the boucle
+        this.categorie = categories[i];//it does NOT belong to the boucle:  //se o boucle while tem apenas uma linha, podemos não colocar {}. Isto para explicar que 'this.categorie = categories{i}
+        //não está no boucle.
+
+
+        }
+
+    //retourne la description de la Ville
+    public String decrisToi(){
+        return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants
+                +" habitant(s) => elle est donc de catégorie : "+this.categorie;
     }
-    //se o boucle while tem apenas uma linha, podemos não colocar {}. Isto para explicar que 'this.categorie = categories{i}
-    //não está no boucle.
+
+    //Retourne une chaîne de caractères selon le résultat de la comparaison
+    public String comparer(Ville v1){
+
+        String str = new String();
+
+        if(v1.getNombreHabitants()> getNombreHabitants())//au lieu de this.nbreHabitants
+            str = v1.getNom()+" est une ville plus peuplée que "+this.nomVille;
+        else
+            str=this.nomVille+" est une ville plus peuplée que "+v1.getNom();
+        return str;
+    }
+
 
 
 }
