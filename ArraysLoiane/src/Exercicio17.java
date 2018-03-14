@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class Exercicio17 {
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] vetorA = new int[10];
