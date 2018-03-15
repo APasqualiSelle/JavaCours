@@ -38,7 +38,7 @@ class IndependenceDay extends Movie {
 
     @Override
     public String plot() {
-        return "Aliens attemps to take over planet Earth";
+        return "Aliens attempts to take over planet Earth";
     }
 }
 

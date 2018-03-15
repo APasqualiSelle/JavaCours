@@ -1,6 +1,8 @@
 package com.sdz;
 
+
 public class Ville {
+
 
     //variables d'instance
    protected String nomVille;
@@ -112,7 +114,7 @@ public class Ville {
         }
 
     //retourne la description de la Ville
-    public String decrisToi(){
+   public String decrisToi(){
         return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants
                 +" habitant(s) => elle est donc de catégorie : "+this.categorie;
     }
@@ -129,8 +131,23 @@ public class Ville {
         return str;
     }
 
+   //méthode toString de la classe Object
+   /* public String toString(){
+        return "\n\n\t\t"+this.nomVille+" est une ville de "+this.nomPays+" elle  comporte : "+this.nbreHabitants+" ==> elle" +
+                " est donc de catégorie :"+this.categorie;
+    }
+
+*/
+   public int hashCode(){
+
+       final int prime=31;
+       int result = 1;
+
+       result = prime * result + ((nomPays == null) ? 0 : nomPays.hashCode());
+       result = prime * result + ((nomVille == null) ? 0 : nomVille.hashCode());
+       return result;
+   }
 
 
-}
-
+   }
 
