@@ -6,17 +6,12 @@ public class Palindrome {
 
         Scanner clavier = new Scanner(System.in);
         System.out.println("Entrez un mot ");
-        String mot = clavier.nextLine();
+        }
 
 
-
-
-
-
-        //como entrar elementos indefinidos num array?
 
     }
-}
+
 
  /*Scanner in = new Scanner(System.in);
                 boolean result = true;
