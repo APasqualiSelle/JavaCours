@@ -2,6 +2,8 @@ package com.alineselle;
 
 public class DeluxeHamburger extends Hamburger {
 
+
+
     public DeluxeHamburger() {
         super("Deluxe", "Sausage and Bacon", 14.54, "white");
         super.addHamburgerAddition1("Chips", 2.75);

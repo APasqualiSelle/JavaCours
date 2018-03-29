@@ -5,20 +5,20 @@ public class Capitale extends Ville {
     private String monument;
 
 
-    //Constructeur par défaut
+ /*   //Constructeur par défaut
     public Capitale(){
         //ce mot clé appelle le constructeur de la classe mère
         super();
-        //this.nomVille = "toto";
+        *//* this.nomVille = "toto"; *//*
         monument = "aucun";
-    }
+    }*/
 
-    //Constructeur d'initialisation de capitale
+   /* //Constructeur d'initialisation de capitale
     public Capitale(String nom, int hab, String pays, String monument){
 
         super(nom, hab, pays);
         this.monument = monument;
-    }
+    }*/
 
 
 //méthode type String

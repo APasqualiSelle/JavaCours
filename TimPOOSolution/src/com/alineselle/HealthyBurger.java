@@ -23,6 +23,13 @@ public class HealthyBurger extends Hamburger {
         this.healthyExtra2Price = price;
     }
 
+
+/*//Complete rebuilding of the methode de classe mother
+    @Override
+    public double itemizeHamburger() {
+        return super.itemizeHamburger();
+    }*/
+
     @Override
     public double itemizeHamburger() {
         double hamburgerPrice = super.itemizeHamburger();
@@ -36,4 +43,7 @@ public class HealthyBurger extends Hamburger {
         }
         return hamburgerPrice;
     }
+
+
+
 }

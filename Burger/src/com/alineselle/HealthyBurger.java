@@ -59,6 +59,7 @@ public class HealthyBurger extends BasicBurger {
 
     }
 
+
     @Override
     public double totalAmount() {
         getBaseBurger();

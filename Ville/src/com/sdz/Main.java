@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-       // Ville A = new Ville();
+  /*     // Ville A = new Ville();
         //System.out.println(A.toString()); ex da méthode toString invoqué sans reecriture. = com.sdz.Ville@4554617c
      //   System.out.println(A);//ex du print de um objet A que herda tacitamente da mãe Objet = com.sdz.Ville@4554617c
 
@@ -30,7 +30,28 @@ public class Main {
        for(Ville v: tableau){
             System.out.println(v.decrisToi()+"\n");
         }
-    }}
+
+   */
+      /*  Ville v = null;
+        try {
+            v = new Ville("Re", -12000, "France");
+
+        }
+        //gestion de l'exception  sur le nombre d'habitants
+        catch (NombreHabitantException|NomVilleException e2) {
+            System.out.println(e2.getMessage());
+        }
+        *//*//*/
+     //   gestion de l 'exception sur le nom de la Ville
+    //    catch(NombreHabitantException e){
+     //       System.out.println(e.getMessage());*//*
+      //   finally{
+       //         if (v == null)
+                 //   v = new Ville();
+          //  }
+       //     System.out.println(v.toString());*/
+        }
+    }
 
 
 

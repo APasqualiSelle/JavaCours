@@ -33,15 +33,15 @@ public class Main {
         //For the two additional classes this may require you to be looking at the base class for pricing  and then
         //adding total to final price
 
-  HealthyBurger burger1 = new HealthyBurger(2.5, true, "green");
+ /* HealthyBurger burger1 = new HealthyBurger(2.5, true, "green");
      burger1.choosenAdditions(false,false,true,true);
        burger1.choosenHealthyAdditions(false,true);
-        System.out.println(burger1.totalAmount());
+        System.out.println(burger1.totalAmount());*/
 
-      /*BasicBurger burger2 = new BasicBurger(2.5,true,"white");
-        burger2.choosenAdditions(true,false,false,false);
+      BasicBurger burger2 = new BasicBurger(2.5,true,"white");
+        burger2.choosenAdditions(true,true,true,true);
 
-        System.out.println(burger2.totalAmount());*/
+        System.out.println(burger2.totalAmount());
 
     }
 }
