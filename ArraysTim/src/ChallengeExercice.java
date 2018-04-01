@@ -1,7 +1,10 @@
+import java.util.Arrays;
 import java.util.Scanner;
+
 public class ChallengeExercice {
-private static Scanner scanner = new Scanner(System.in);
-    public static void main(String[]args){
+    private static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
 
         //Create a program using arrays that sorts a list of integers descending order.
         //Descending order is highest value to lowest.
@@ -15,37 +18,56 @@ private static Scanner scanner = new Scanner(System.in);
         //you will have to figure out how to copy the array elements from the passed array into a new
         //array and sort them and return the new sorted array
         int[] myIntegers = getIntegers(5);
-        printArrays(myIntegers);
+        //   printArrays(myIntegers);
+        System.out.println();
+        int[] sorted = sortIntegers(myIntegers);
+        printArrays(sorted);
+    }
 
-        }
-    public static int[] getIntegers(int number){
-        System.out.println("Enter "+number+" integer values\r");
-        int[] values = new int[number];
+    public static int[] getIntegers(int capacity) {
+        System.out.println("Enter " + capacity + " integer values\r");
+        int[] values = new int[capacity];
 
-        for (int i =0;i<values.length;i++){
+        for (int i = 0; i < values.length; i++) {
             values[i] = scanner.nextInt();
         }
 
         return values;
     }
-    public static void printArrays(int[]array){
-        for(int i =0;i<array.length;i++){
-            System.out.println("Element "+i+" typed values was "+array[i]);
-        }
 
+    public static int[] printArrays(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Element " + i + " content " + array[i]);
+        }
+        return array;
     }
 
 
-    public static void sortIntegers(int[] array){
+    public static int[] sortIntegers(int[] array) {
 
+       /* int[] sortedArray= new int[array.length];
         for(int i=0;i<array.length;i++){
-            if(array[i]>(array[array.length - 1 - i])){
-                array[i] = array[i+0];
-                int arraySorte = array[i];
+            sortedArray[i]=array[i];
+            }*/
+       
+        //methode from Java that does the same thing above in comment
+        int[] sortedArray = Arrays.copyOf(array, array.length);
+        boolean flag = true;
+        int temp;
+        while (flag) {
+            flag = false;
+            for (int i = 0; i < sortedArray.length - 1; i++) {
+                if (sortedArray[i] < sortedArray[i + 1]) {
+                    temp = sortedArray[i];
+                    sortedArray[i] = sortedArray[i + 1];
+                    sortedArray[i + 1] = temp;
+                    flag = true;
+                }
             }
         }
-
+        return sortedArray;
     }
 
 
 }
+
