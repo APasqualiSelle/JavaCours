@@ -56,11 +56,11 @@ public class ChallengeExercice {
         int temp;
         while (flag) {
             flag = false;
-            for (int i = 0; i < sortedArray.length - 1; i++) {
+            for (int i = 0; i < sortedArray.length - 1; i++) {//1,2,3
                 if (sortedArray[i] < sortedArray[i + 1]) {
-                    temp = sortedArray[i];
-                    sortedArray[i] = sortedArray[i + 1];
-                    sortedArray[i + 1] = temp;
+                    temp = sortedArray[i];// temp = sorteArray[0] = 1
+                    sortedArray[i] = sortedArray[i + 1]; //sorteArray[0] = sortedArray[1] = 2
+                    sortedArray[i + 1] = temp; // sortedArray[1] = sortedArray[0] = 1
                     flag = true;
                 }
             }
