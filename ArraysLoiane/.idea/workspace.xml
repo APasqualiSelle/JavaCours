@@ -25,11 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exercicio27.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Exercicio27.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exercicio27.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercicio16_1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Exercicio16_1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -99,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/Exercicio22_2.java" />
         <option value="$PROJECT_DIR$/src/PalindromeTuto3.java" />
         <option value="$PROJECT_DIR$/src/Exercicio27.java" />
+        <option value="$PROJECT_DIR$/src/Exercicio16_1.java" />
       </list>
     </option>
   </component>
@@ -164,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Exercicio27">
+  <component name="RunManager" selected="Application.Exercicio16_1">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -172,9 +183,9 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Exercicio27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Exercicio16_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Exercicio27" />
+      <option name="MAIN_CLASS_NAME" value="Exercicio16_1" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -276,11 +287,11 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Exercicio4" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Exercicio27" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Exercicio16_1" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Exercicio27" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Exercicio16_1" />
         <item index="1" class="java.lang.String" itemvalue="Application.Exercicio4" />
       </list>
     </recent_temporary>
@@ -340,13 +351,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Exercicio3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercicio4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -685,6 +689,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercicio16_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding />
         </state>
       </provider>
