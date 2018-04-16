@@ -31,16 +31,15 @@ public class Ville {
         nbreInstancesBis++;
     }
 
-    //Constructor avec paramètres
-    //j'ai ajouté un <<p>> en première lettre de paramètres
-    //Ce n'est pas une convention, mais ça peut être un bon moyen
-    //de les répérer
-    public Ville(String pNom, int pNbre, String pPays) throws
-            NombreHabitantException, NomVilleException {
-        if (pNbre < 0)
-            throw new NombreHabitantException(pNbre);
-        if(pNom.length()<3)
-            throw new NomVilleException("le nom de la ville est inférieur à 3 caractères! nom = "+pNom);
+
+    public Ville(String pNom, int pNbre, String pPays) throws NomVilleException,NombreHabitantException
+             {
+
+                 if(pNom.length()<3){
+                     throw new NomVilleException("le nom  de la ville est inférieur à 3 caractères! nom = "+pNom);
+                 }  if (pNbre < 0)
+                 throw new NombreHabitantException(pNbre);
+
         else
                  {
                 nbreInstances++;
